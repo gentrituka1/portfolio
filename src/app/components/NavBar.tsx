@@ -11,10 +11,6 @@ const navLinks = [
     href: "#about",
   },
   {
-    title: "Projects",
-    href: "#projects",
-  },
-  {
     title: "Contact",
     href: "#contact",
   },
@@ -29,7 +25,7 @@ export const NavBar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          PORTFOLIO
         </Link>
         <div className="block md:hidden">
           {!navbarOpen ? (

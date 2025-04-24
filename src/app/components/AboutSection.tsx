@@ -50,6 +50,23 @@ const TAB_DATA = [
       </ul>
     ),
   },
+    {
+      title: "Projects",
+      id: "projects",
+      content: (
+        <ul className="list-disc pl-2">
+          <li><a className="hover:text-orange-300" href="https://shopaz.com/" target="_blank">Shopaz</a></li>
+          <li><a className="hover:text-orange-300" href="http://play.google.com/store/apps/details?id=com.bktshopaz&hl=en_US&gl=US" target="_blank">Shopaz App</a></li>
+          <li><a className="hover:text-orange-300" href="https://play.google.com/store/apps/details?id=com.sutro&hl=en_US&gl=US&pli=1>" target="_blank">Sutro App</a></li>
+          <li><a className="hover:text-orange-300" href="https://attributy.com/" target="_blank">Attributy</a></li>
+          <li><a className="hover:text-orange-300" href="https://steady-sorbet-b5cafe.netlify.app/" target="_blank">Leo Renovirung</a></li>
+          <li><a className="hover:text-orange-300" href="https://github.com/gentrituka1/Hangman-game" target="_blank">Hangman</a></li>
+          <li><a className="hover:text-orange-300" href="https://github.com/gentrituka1/hoxton-react-tic-tac-toe" target="_blank">Tic Tac Toe</a></li>
+          <li><a className="hover:text-orange-300" href="https://steady-sorbet-b5cafe.netlify.app/" target="_blank">Leo Renovirung</a></li>
+          <li><a className="hover:text-orange-300" href="https://github.com/gentrituka1/hoxton-react-grocero" target="_blank">Grocero</a></li>
+        </ul>
+      ),
+    },
 ];
 
 const AboutSection = () => {
@@ -102,6 +119,12 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("education")}
             >
               Education{" "}
+            </TabButton>
+            <TabButton
+              active={tab === "projects"}
+              selectTab={() => handleTabChange("projects")}
+            >
+              Projects{" "}
             </TabButton>
           </div>
           <div className="mt-8">
